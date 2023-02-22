@@ -1,0 +1,100 @@
+.column{
+    background-color: gainsboro;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.column > img{
+    width: 200px;
+    height: 160px;
+    background-color: rgb(19, 162, 245);
+}
+
+.column > h6{
+    display: inline-block;
+    font-size: 17px;
+    color: rgb(78, 78, 78);
+    margin: 5px 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(18, 19, 18);
+    margin-left: 10%;
+}
+p{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(18, 19, 18);
+}
+
+@media screen and (min-width: 1201px) {
+    h2{
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(18, 19, 18);
+    }
+    p{
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(18, 19, 18);
+    }
+    .row {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 16px;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    h2{
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(18, 19, 18);
+    }
+    p{
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(18, 19, 18);
+    }
+    .row {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 16px;
+        margin-bottom: 70px;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    h2{
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(18, 19, 18);
+        text-align: center;
+    }
+    p{
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(18, 19, 18);
+    }
+    .row {
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 16px;
+        margin-bottom: 70px;
+        justify-content: space-around;
+    }
+
+}
